@@ -1,0 +1,38 @@
+^C:\USERS\VEREN\CLIONPROJECTS\JULIASET\BUILD\CMAKEFILES\B4004C29F16E33EA9179249B9EA8C058\MOC_WINDOW.CPP.RULE
+setlocal
+cd C:\Users\veren\CLionProjects\juliaset\build\src\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\winrt_x64_msvc2019\bin\moc.exe @C:/Users/veren/CLionProjects/juliaset/build/src/app/moc_Window.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\VEREN\CLIONPROJECTS\JULIASET\BUILD\CMAKEFILES\41E0E1F628CBFF6135E438E055AF5CC2\MOC_GLWIDGET.CPP.RULE
+setlocal
+cd C:\Users\veren\CLionProjects\juliaset\build\src\base
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\winrt_x64_msvc2019\bin\moc.exe @C:/Users/veren/CLionProjects/juliaset/build/src/base/moc_GLWidget.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\VEREN\CLIONPROJECTS\JULIASET\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/veren/CLionProjects/juliaset -BC:/Users/veren/CLionProjects/juliaset/build --check-stamp-file C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

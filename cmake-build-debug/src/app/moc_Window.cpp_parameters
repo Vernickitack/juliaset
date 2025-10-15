@@ -1,0 +1,5 @@
+-DWIN32
+--compiler-flavor=msvc
+-o
+C:/Users/veren/CLionProjects/juliaset/cmake-build-debug/src/app/moc_Window.cpp
+C:/Users/veren/CLionProjects/juliaset/src/app/Window.h

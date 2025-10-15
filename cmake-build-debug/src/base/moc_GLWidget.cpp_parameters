@@ -1,0 +1,5 @@
+-DWIN32
+--compiler-flavor=msvc
+-o
+C:/Users/veren/CLionProjects/juliaset/cmake-build-debug/src/base/moc_GLWidget.cpp
+C:/Users/veren/CLionProjects/juliaset/src/base/GLWidget.h
