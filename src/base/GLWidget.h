@@ -16,6 +16,8 @@
 #include <QWheelEvent>
 #include <QMouseEvent>
 #include <QSurfaceFormat>
+#include <QtMath>
+
 #define ld long double
 
 class GLWidget : public QOpenGLWidget, protected QOpenGLFunctions {

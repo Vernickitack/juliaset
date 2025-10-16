@@ -22,8 +22,8 @@ Window::Window(QWidget *parent) : QMainWindow(parent) {
     auto *iterationsTitle = new QLabel("Iterations:");
     iterationsSlider = new QSlider(Qt::Horizontal);
     iterationsSlider->setRange(10, 1000);
-    iterationsSlider->setValue(100);
-    iterationsLabel = new QLabel("100");
+    iterationsSlider->setValue(300);
+    iterationsLabel = new QLabel("300");
 
     fpsLabel = new QLabel("FPS: 0");
 

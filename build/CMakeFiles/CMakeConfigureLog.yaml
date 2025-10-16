@@ -91,7 +91,7 @@ events:
       Microsoft (R) Build Engine версии 16.11.6+a918ceb31 для .NET Framework
       (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
       
-      Сборка начата 15.10.2025 22:30:03.
+      Сборка начата 16.10.2025 2:43:03.
       Проект "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
         Создание каталога "Debug\\".
@@ -117,7 +117,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:01.55
+      Прошло времени 00:00:00.94
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -909,7 +909,7 @@ events:
       Microsoft (R) Build Engine версии 16.11.6+a918ceb31 для .NET Framework
       (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
       
-      Сборка начата 15.10.2025 22:30:05.
+      Сборка начата 16.10.2025 2:43:04.
       Проект "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\4.1.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
         Создание каталога "Debug\\".
@@ -1225,8 +1225,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-ztr1qu"
-      binary: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-ztr1qu"
+      source: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-k5oqff"
+      binary: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-k5oqff"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1235,39 +1235,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-ztr1qu'
+        Change Dir: 'C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-k5oqff'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_3743c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_73c53.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine версии 16.11.6+a918ceb31 для .NET Framework
         (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
         
-        Сборка начата 15.10.2025 22:30:06.
-        Проект "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ztr1qu\\cmTC_3743c.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 16.10.2025 2:43:05.
+        Проект "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k5oqff\\cmTC_73c53.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_3743c.dir\\Debug\\".
-          Создание каталога "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ztr1qu\\Debug\\".
-          Создание каталога "cmTC_3743c.dir\\Debug\\cmTC_3743c.tlog\\".
+          Создание каталога "cmTC_73c53.dir\\Debug\\".
+          Создание каталога "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k5oqff\\Debug\\".
+          Создание каталога "cmTC_73c53.dir\\Debug\\cmTC_73c53.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_3743c.dir\\Debug\\cmTC_3743c.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_73c53.dir\\Debug\\cmTC_73c53.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_3743c.dir\\Debug\\\\" /Fd"cmTC_3743c.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_73c53.dir\\Debug\\\\" /Fd"cmTC_73c53.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.29.30159 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_3743c.dir\\Debug\\\\" /Fd"cmTC_3743c.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_73c53.dir\\Debug\\\\" /Fd"cmTC_73c53.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ztr1qu\\Debug\\cmTC_3743c.exe" /INCREMENTAL /ILK:"cmTC_3743c.dir\\Debug\\cmTC_3743c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-ztr1qu/Debug/cmTC_3743c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-ztr1qu/Debug/cmTC_3743c.lib" /MACHINE:X64  /machine:x64 cmTC_3743c.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_3743c.vcxproj -> C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ztr1qu\\Debug\\cmTC_3743c.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k5oqff\\Debug\\cmTC_73c53.exe" /INCREMENTAL /ILK:"cmTC_73c53.dir\\Debug\\cmTC_73c53.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-k5oqff/Debug/cmTC_73c53.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-k5oqff/Debug/cmTC_73c53.lib" /MACHINE:X64  /machine:x64 cmTC_73c53.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_73c53.vcxproj -> C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k5oqff\\Debug\\cmTC_73c53.exe
         FinalizeBuildStatus:
-          Файл "cmTC_3743c.dir\\Debug\\cmTC_3743c.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_3743c.dir\\Debug\\cmTC_3743c.tlog\\cmTC_3743c.lastbuildstate".
-        Сборка проекта "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ztr1qu\\cmTC_3743c.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_73c53.dir\\Debug\\cmTC_73c53.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_73c53.dir\\Debug\\cmTC_73c53.tlog\\cmTC_73c53.lastbuildstate".
+        Сборка проекта "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k5oqff\\cmTC_73c53.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:01.06
+        Прошло времени 00:00:00.70
         
       exitCode: 0
   -
@@ -1307,8 +1307,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-8x7hro"
-      binary: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-8x7hro"
+      source: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-roqt5y"
+      binary: "C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-roqt5y"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1318,39 +1318,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-8x7hro'
+        Change Dir: 'C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-roqt5y'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_2c6ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_734bd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine версии 16.11.6+a918ceb31 для .NET Framework
         (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
         
-        Сборка начата 15.10.2025 22:30:08.
-        Проект "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8x7hro\\cmTC_2c6ba.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 16.10.2025 2:43:06.
+        Проект "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-roqt5y\\cmTC_734bd.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_2c6ba.dir\\Debug\\".
-          Создание каталога "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8x7hro\\Debug\\".
-          Создание каталога "cmTC_2c6ba.dir\\Debug\\cmTC_2c6ba.tlog\\".
+          Создание каталога "cmTC_734bd.dir\\Debug\\".
+          Создание каталога "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-roqt5y\\Debug\\".
+          Создание каталога "cmTC_734bd.dir\\Debug\\cmTC_734bd.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_2c6ba.dir\\Debug\\cmTC_2c6ba.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_734bd.dir\\Debug\\cmTC_734bd.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_2c6ba.dir\\Debug\\\\" /Fd"cmTC_2c6ba.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_734bd.dir\\Debug\\\\" /Fd"cmTC_734bd.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.29.30159 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_2c6ba.dir\\Debug\\\\" /Fd"cmTC_2c6ba.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_734bd.dir\\Debug\\\\" /Fd"cmTC_734bd.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8x7hro\\Debug\\cmTC_2c6ba.exe" /INCREMENTAL /ILK:"cmTC_2c6ba.dir\\Debug\\cmTC_2c6ba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-8x7hro/Debug/cmTC_2c6ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-8x7hro/Debug/cmTC_2c6ba.lib" /MACHINE:X64  /machine:x64 cmTC_2c6ba.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_2c6ba.vcxproj -> C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8x7hro\\Debug\\cmTC_2c6ba.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-roqt5y\\Debug\\cmTC_734bd.exe" /INCREMENTAL /ILK:"cmTC_734bd.dir\\Debug\\cmTC_734bd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-roqt5y/Debug/cmTC_734bd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/CMakeScratch/TryCompile-roqt5y/Debug/cmTC_734bd.lib" /MACHINE:X64  /machine:x64 cmTC_734bd.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_734bd.vcxproj -> C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-roqt5y\\Debug\\cmTC_734bd.exe
         FinalizeBuildStatus:
-          Файл "cmTC_2c6ba.dir\\Debug\\cmTC_2c6ba.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_2c6ba.dir\\Debug\\cmTC_2c6ba.tlog\\cmTC_2c6ba.lastbuildstate".
-        Сборка проекта "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8x7hro\\cmTC_2c6ba.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_734bd.dir\\Debug\\cmTC_734bd.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_734bd.dir\\Debug\\cmTC_734bd.tlog\\cmTC_734bd.lastbuildstate".
+        Сборка проекта "C:\\Users\\veren\\CLionProjects\\juliaset\\build\\CMakeFiles\\CMakeScratch\\TryCompile-roqt5y\\cmTC_734bd.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:01.07
+        Прошло времени 00:00:00.74
         
       exitCode: 0
   -

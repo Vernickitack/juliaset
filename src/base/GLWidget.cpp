@@ -56,8 +56,8 @@ void GLWidget::initializeGL() {
     shaderProgram->setUniformValue("iResolution", QVector2D(((float) width()), ((float) height())));
     updateViewMatrix();
     shaderProgram->setUniformValue("iIterations", iterations);
-    shaderProgram->setUniformValue("iThreshold", (float)threshold);
-    shaderProgram->setUniformValue("iJuliaConstant", QVector2D((float)juliaConstant.x(), (float)juliaConstant.y()));
+    shaderProgram->setUniformValue("iThreshold", (float) threshold);
+    shaderProgram->setUniformValue("iJuliaConstant", QVector2D((float) juliaConstant.x(), (float) juliaConstant.y()));
 
     startTimer(20);
 }
@@ -66,7 +66,7 @@ void GLWidget::setJuliaConstant(double real, double imag) {
     juliaConstant = QPointF(real, imag);
     if (shaderProgram) {
         shaderProgram->bind();
-        shaderProgram->setUniformValue("iJuliaConstant", QVector2D((float)real, (float)imag));
+        shaderProgram->setUniformValue("iJuliaConstant", QVector2D((float) real, (float) imag));
         update();
     }
 }
@@ -75,7 +75,7 @@ void GLWidget::resizeGL(int w, int h) {
     glViewport(0, 0, w, h);
     if (shaderProgram) {
         shaderProgram->bind();
-        shaderProgram->setUniformValue("iResolution", QVector2D((float)w, (float)h));
+        shaderProgram->setUniformValue("iResolution", QVector2D((float) w, (float) h));
     }
 }
 
@@ -92,43 +92,38 @@ void GLWidget::paintGL() {
 }
 
 void GLWidget::wheelEvent(QWheelEvent *event) {
-    ld oldZoom = zoom;
-
-    ld baseFactor = 1.1;
-    ld adaptiveFactor = baseFactor / (1.0 + log(zoom + 1.0) * 0.1);
-
-    if (event->angleDelta().y() > 0) {
-        zoom /= adaptiveFactor;
-    } else {
-        zoom *= adaptiveFactor;
-    }
-
-
     QPointF mousePos = event->position();
 
-    ld ratio = (ld)width() / height();
+    QPointF ndcMousePos(
+            (2.0 * mousePos.x() / width()) - 1.0,
+            1.0 - (2.0 * mousePos.y() / height())
+    );
 
-    ld nx = (2.0 * (ld) mousePos.x()) / (ld) width() - 1.0;
-    ld ny = 1.0 - (2.0 * (ld) mousePos.y()) / (ld) height();
-
+    ld ratio = (ld) width() / height();
+    ld fx, fy;
     if (ratio > 1.0) {
-        nx *= ratio;
+        fx = (ld) ndcMousePos.x() * (ld) ratio;
+        fy = (ld) ndcMousePos.y();
     } else {
-        ny /= ratio;
+        fx = (ld) ndcMousePos.x();
+        fy = (ld) ndcMousePos.y() / (ld) ratio;
     }
 
-    ld worldXBefore = center.x() + nx / oldZoom;
-    ld worldYBefore = center.y() + ny / oldZoom;
+    ld factor = 1.3;
+    ld change = (event->angleDelta().y() < 0 ? factor : (1.0L / factor));
+    ld oldZoom = zoom;
+    zoom *= change;
 
-    ld worldXAfter = center.x() + nx / zoom;
-    ld worldYAfter = center.y() + ny / zoom;
-
-    center.setX(center.x() - (worldXBefore - worldXAfter));
-    center.setY(center.y() - (worldYBefore - worldYAfter));
+    ld oldX = center.x();
+    ld oldY = center.y();
+    center.setX((oldX + fx) / change - fx);
+    center.setY((oldY + fy) / change - fy);
 
     updateViewMatrix();
     update();
+    event->accept();
 }
+
 
 void GLWidget::mousePressEvent(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {
@@ -136,6 +131,7 @@ void GLWidget::mousePressEvent(QMouseEvent *event) {
         lastMousePos = event->pos();
         setCursor(Qt::ClosedHandCursor);
     }
+    event->accept();
 }
 
 void GLWidget::mouseMoveEvent(QMouseEvent *event) {
@@ -143,14 +139,15 @@ void GLWidget::mouseMoveEvent(QMouseEvent *event) {
         QPoint delta = event->pos() - lastMousePos;
         lastMousePos = event->pos();
 
-        ld adaptiveFactor = 1.0 / (1.0 + log(zoom + 1.0) * 0.1);
+        ld factor = 3 * zoom;
 
-        center.setX(center.x() - ((ld)delta.x()) * adaptiveFactor / zoom / ((ld)width()));
-        center.setY(center.y() + ((ld)delta.y()) * adaptiveFactor / zoom / ((ld)height()));
+        center.setX(center.x() - ((ld) delta.x()) * factor / zoom / ((ld) width()));
+        center.setY(center.y() + ((ld) delta.y()) * factor / zoom / ((ld) height()));
 
         updateViewMatrix();
         update();
     }
+    event->accept();
 }
 
 void GLWidget::mouseReleaseEvent(QMouseEvent *event) {
@@ -158,6 +155,7 @@ void GLWidget::mouseReleaseEvent(QMouseEvent *event) {
         isDragging = false;
         setCursor(Qt::ArrowCursor);
     }
+    event->accept();
 }
 
 void GLWidget::setIterations(int value) {
@@ -171,8 +169,8 @@ void GLWidget::setIterations(int value) {
 
 void GLWidget::updateViewMatrix() {
     viewMatrix.setToIdentity();
-    viewMatrix.scale((float)zoom, (float)zoom);
-    viewMatrix.translate((float)center.x(), (float)center.y());
+    viewMatrix.scale((float) zoom, (float) zoom);
+    viewMatrix.translate((float) center.x(), (float) center.y());
 
     if (shaderProgram) {
         shaderProgram->bind();
@@ -182,8 +180,8 @@ void GLWidget::updateViewMatrix() {
 
 void GLWidget::updateFPS() {
     if (frameTime.elapsed() >= 1000) {
-        fps = ((ld)frameCount) * 1000.0 / frameTime.elapsed();
-        emit fpsChanged(QString("FPS: %1").arg((double)fps, 0, 'f', 1));
+        fps = ((ld) frameCount) * 1000.0 / frameTime.elapsed();
+        emit fpsChanged(QString("FPS: %1").arg((double) fps, 0, 'f', 1));
         frameCount = 0;
         frameTime.restart();
     }
@@ -197,5 +195,5 @@ void GLWidget::resetView() {
 }
 
 QVector2D GLWidget::getJuliaConstant() {
-    return {(float)juliaConstant.x(), (float)juliaConstant.y()};
+    return {(float) juliaConstant.x(), (float) juliaConstant.y()};
 }
