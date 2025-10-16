@@ -1,3 +1,0 @@
-C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/juliaset.dir
-C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/veren/CLionProjects/juliaset/build/CMakeFiles/ZERO_CHECK.dir
