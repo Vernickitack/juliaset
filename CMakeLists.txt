@@ -17,7 +17,13 @@ set(SOURCES
 
 qt5_wrap_cpp(MOC_SOURCES src/app/Window.h src/base/GLWidget.h)
 
-add_executable(juliaset ${SOURCES} ${MOC_SOURCES})
+qt5_add_resources(SHADERS src/app/shaders/shaders.qrc)
+
+add_executable(juliaset
+        ${SOURCES}
+        ${MOC_SOURCES}
+        ${SHADERS}
+        )
 
 target_link_libraries(juliaset
         Qt5::Core

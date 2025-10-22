@@ -36,8 +36,8 @@ void GLWidget::initializeGL() {
 
     shaderProgram = new QOpenGLShaderProgram(this);
 
-    shaderProgram->addShaderFromSourceFile(QOpenGLShader::Vertex, "shaders/vertex.glsl");
-    shaderProgram->addShaderFromSourceFile(QOpenGLShader::Fragment, "shaders/fragment.glsl");
+    shaderProgram->addShaderFromSourceFile(QOpenGLShader::Vertex, ":/shaders/vertex.glsl");
+    shaderProgram->addShaderFromSourceFile(QOpenGLShader::Fragment, ":/shaders/fragment.glsl");
     shaderProgram->link();
     shaderProgram->bind();
 
