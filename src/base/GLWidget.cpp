@@ -77,7 +77,7 @@ void GLWidget::paintGL() {
     glClear(GL_COLOR_BUFFER_BIT);
 
     shaderProgram->bind();
-    shaderProgram->setUniformValue("iViewMatrix", engine.getViewMatrix()); // TODO:?
+    shaderProgram->setUniformValue("iViewMatrix", engine.getViewMatrix());
     vao.bind();
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     vao.release();
