@@ -17,6 +17,7 @@
 #include <QMouseEvent>
 #include <QSurfaceFormat>
 #include <QtMath>
+#include "Engine.h"
 
 #define ld long double
 
@@ -57,26 +58,18 @@ public slots:
     void resetView();
 
 private:
+    Engine engine;
+
     QOpenGLShaderProgram *shaderProgram{};
     QOpenGLBuffer vbo;
     QOpenGLVertexArrayObject vao;
 
-    QMatrix4x4 viewMatrix;
-    QPointF center;
-    ld zoom;
-
     QPoint lastMousePos;
     bool isDragging;
-
-    int iterations;
-    ld threshold;
-    QPointF juliaConstant;
 
     QElapsedTimer frameTime;
     int frameCount;
     ld fps;
-
-    void updateViewMatrix();
 
     void updateFPS();
 };
