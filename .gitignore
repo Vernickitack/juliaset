@@ -1,3 +1,6 @@
 /build
 /cmake-build-debug
 /.idea
+collect.py
+report.txt
+Project_1.txt
